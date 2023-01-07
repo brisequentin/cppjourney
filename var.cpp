@@ -22,5 +22,34 @@ int main()
     std::string string1{"hello world"};
     string1 = "Hello World 2 !";
     std::cout << string1 << std::endl;
+
+
+
+
+    //user input
+    std::cout << "Please type number : ";
+
+    std::cout << "Good " << std::cin.good() << std::endl; //goodbit :1
+    std::cout << "Fail " << std::cin.fail() << std::endl; //failbit :0
+    std::cout << "Bad " << std::cin.bad() << std::endl;   //badbit  :0
+
+
+    int nb;
+    std::cin >> nb;
+    std::cout << "Your number is " << nb << std::endl;
+
+
+    std::cout << "Good " << std::cin.good() << std::endl;
+    std::cout << "Fail " << std::cin.fail() << std::endl;
+    std::cout << "Bad " << std::cin.bad() << std::endl;
+
+
+    //toute la ligne
+    std::string username;
+    std::getline(std::cin, username, '\n');
+
+
+
+
     return 0;
 }
