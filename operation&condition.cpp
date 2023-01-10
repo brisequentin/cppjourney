@@ -40,6 +40,14 @@ int main()
 
     }
 
+    for(int i; i<=10; i++){
+        std::cout << "i vaut" << i << std::endl;
+    }
+
+    for(const auto letter : sentence){
+        std::cout << letter << "\n";
+    }
+
 
     return 0;
 }
