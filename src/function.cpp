@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "../include/hw.hpp"
 
 void printHelloWorld(){
     //passage par valeurs
@@ -15,9 +16,6 @@ void setNumbers(float& a, float& b){
     a -= 6;
     b += 2;
 }
-
-
-
 
 
 int main(){
@@ -59,8 +57,10 @@ int main(){
 
         <spécificateurs> : mutable, noexcept
     */
-    auto func = []() -> void { std::cout << "Hello World !" << std::endl; };
+    auto func = []() -> void { std::cout << "Hello Worldlll !" << std::endl; };
     func();
+
+    hw();
 
     return 0;
 }
