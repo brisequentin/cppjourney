@@ -7,7 +7,7 @@
 void createPlayer(std::string name, int level){
     //assert(<expression> && <message>)
     assert(level > 0 && "Le niveau d'un joueur est au minimum de 1");
-    std::cout << "creation de " << name << ", de niveau " level << std::endl;
+    std::cout << "creation de " << name << ", de niveau " << level << std::endl;
 }
 
 
