@@ -2,7 +2,22 @@
 #include <string>
 #include <fstream>
 
+
+struct Product{
+    std::string name;
+    float price;
+    bool available;
+};
+
+
+
 int main(){
+    struct Product p{"tournevis", 3f, true};
+    std::cout << "Prix : " << p.price << std::endl;
+    p.price = 3.37f;
+    std::cout << "Prix : " << p.price << std::endl;
+
+
     
     /*
         std::ios::out, std::ios::in
@@ -37,4 +52,6 @@ int main(){
 
 
     return 0;
+
+
 }

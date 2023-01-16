@@ -7,6 +7,10 @@ int hw()
     return 0;
 }
 
+void HW::test(){
+    std::cout << "test !" << std::endl;
+}
+
 //compile 
 // g++ -std=c++17 function.cpp -o prog
 // ./helloworld
