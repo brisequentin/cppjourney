@@ -15,5 +15,9 @@ int main(){
     Point p{};
     Point p2{p};
     std::cout << p << std::endl;
+
+
+    Point p3{4,2};
+    p3.run();
     return 0;
 }

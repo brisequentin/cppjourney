@@ -15,3 +15,12 @@ Point::~Point(const Point& p){
     std::cout << "Destruction d'un point : " << this << std::endl;
     return 0;
 }
+
+Point::Point(int x = 0, int y = 0) : x(x), y(y) {
+    std::cout << "Creation d'un point : " << this << std::endl;
+    return 0;
+}
+
+void run() const {
+    std::cout << "Method run launched" << std::endl;
+}
