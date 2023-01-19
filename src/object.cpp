@@ -19,5 +19,7 @@ int main(){
 
     Point p3{4,2};
     p3.run();
+
+    std::cout << p3.getX() << std::endl;
     return 0;
 }

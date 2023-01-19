@@ -21,6 +21,19 @@ Point::Point(int x = 0, int y = 0) : x(x), y(y) {
     return 0;
 }
 
-void run() const {
+void Point::run() const {
     std::cout << "Method run launched" << std::endl;
+}
+
+int Point::getX() const {
+    return this->x;
+}
+
+void Point::setX(int x) {
+    if (x <0){
+        throw new std::illegal_argument("ne pas mettre de nombre negatif")
+    } else {
+        this->x = x;
+    }
+    
 }
