@@ -9,6 +9,8 @@
         public:
             using Point::Point();
             Point2D(int x, int y,int z);
+
+            void displayAxes() const noexcept override;
         private:
             int z;
     }

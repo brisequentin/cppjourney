@@ -11,6 +11,9 @@
             int getX() const;
             void setX(int x);
 
+            virtual void displayAxes() const noexcept;
+
+
 
             ~Point();
         private:
